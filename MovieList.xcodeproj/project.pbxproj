@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC214C351DA57AAA00CDA383 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC214C341DA57AAA00CDA383 /* DetailView.swift */; };
 		CC286A2B1DA5718100FCBC81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC286A2A1DA5718100FCBC81 /* AppDelegate.swift */; };
 		CC286A2D1DA5718100FCBC81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC286A2C1DA5718100FCBC81 /* ViewController.swift */; };
 		CC286A301DA5718100FCBC81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC286A2E1DA5718100FCBC81 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC214C341DA57AAA00CDA383 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = ../DetailView.swift; sourceTree = "<group>"; };
 		CC286A271DA5718100FCBC81 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC286A2A1DA5718100FCBC81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC286A2C1DA5718100FCBC81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				CC286A2A1DA5718100FCBC81 /* AppDelegate.swift */,
 				CC286A2C1DA5718100FCBC81 /* ViewController.swift */,
+				CC214C341DA57AAA00CDA383 /* DetailView.swift */,
 				CC286A2E1DA5718100FCBC81 /* Main.storyboard */,
 				CC286A311DA5718100FCBC81 /* Assets.xcassets */,
 				CC286A331DA5718100FCBC81 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC286A2D1DA5718100FCBC81 /* ViewController.swift in Sources */,
+				CC214C351DA57AAA00CDA383 /* DetailView.swift in Sources */,
 				CC286A2B1DA5718100FCBC81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +301,7 @@
 				CC286A3B1DA5718100FCBC81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
