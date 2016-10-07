@@ -12,11 +12,15 @@ class DetailView: UIViewController {
     
     // MARK: IBOutlets
     
+    var movie: Movie?
     var movieTitle: String?
     
     @IBOutlet weak var movieTitleLabel: UILabel!
     
+    @IBOutlet weak var yearLabel: UILabel!
 
+    @IBOutlet weak var directorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,8 +29,10 @@ class DetailView: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if let movieTitle = movieTitle {
-            movieTitleLabel.text = movieTitle
+        if let movieObject = movie {
+            movieTitleLabel.text = movieObject.name
+            yearLabel.text = movieObject.year.description
+            directorLabel.text = movieObject.director
         }
     }
 

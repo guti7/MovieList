@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EON-S0-agx" id="L58-LU-dVh">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -64,18 +64,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-Vq-mFS">
-                                <frame key="frameInset" minX="62" minY="110" width="250" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-Vq-mFS">
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3F-iK-0mc">
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oof-bO-zaN">
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oof-bO-zaN" firstAttribute="top" secondItem="c3F-iK-0mc" secondAttribute="bottom" constant="24" id="0kJ-Hw-SMg"/>
+                            <constraint firstItem="oof-bO-zaN" firstAttribute="centerX" secondItem="c3F-iK-0mc" secondAttribute="centerX" id="80U-hi-G1J"/>
+                            <constraint firstItem="i2k-Vq-mFS" firstAttribute="top" secondItem="mWe-ae-XXs" secondAttribute="bottom" constant="46" id="oIK-yI-0xs"/>
+                            <constraint firstItem="i2k-Vq-mFS" firstAttribute="centerX" secondItem="YlG-9h-Nna" secondAttribute="centerX" id="p2g-Ip-LUA"/>
+                            <constraint firstItem="c3F-iK-0mc" firstAttribute="centerX" secondItem="i2k-Vq-mFS" secondAttribute="centerX" id="qjH-Ed-2A9"/>
+                            <constraint firstItem="c3F-iK-0mc" firstAttribute="top" secondItem="i2k-Vq-mFS" secondAttribute="bottom" constant="22" id="wHC-nk-5LV"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="directorLabel" destination="c3F-iK-0mc" id="ROX-CN-vGR"/>
                         <outlet property="movieTitleLabel" destination="i2k-Vq-mFS" id="AyW-0l-CIH"/>
+                        <outlet property="yearLabel" destination="oof-bO-zaN" id="MWk-Td-W6j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqi-bY-n5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
