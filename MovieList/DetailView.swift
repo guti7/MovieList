@@ -10,16 +10,15 @@ import UIKit
 
 class DetailView: UIViewController {
     
-    // MARK: IBOutlets
     
     var movie: Movie?
     var movieTitle: String?
     
+    // MARK: IBOutlets
     @IBOutlet weak var movieTitleLabel: UILabel!
-    
     @IBOutlet weak var yearLabel: UILabel!
-
     @IBOutlet weak var directorLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

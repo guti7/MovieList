@@ -11,25 +11,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var movieList: [Movie] = []
+    
+    
     var array = ["Elf", "2001", "Back to the Future", "Snowden"]
     var other = ["The Matrix", "Colombiana", "Inception", "Salt"]
     var movies: [[String]] = []
-    
-    var movie1 = Movie(name: "Elf", year: 2005, director:"Jose Gutierez")
-    var movie2 = Movie(name: "Salt", year: 2010, director: "Fanisa Mlangeni")
-    var movie3 = Movie(name: "Colombiana", year: 2011, director:"David Ciaffoni")
-    var movie4 = Movie(name: "Snowden", year: 2016, director:"Nick Lamela")
-    var movie5 = Movie(name: "Deep Water Horizon", year: 2016, director:"Kadeem Palacios")
-    var movie6 = Movie(name: "Storks", year: 2016, director:"Marq Draggon")
-    var movie7 = Movie(name: "Pulp Fiction", year: 1994, director:"Eric Wong")
-    var movie8 = Movie(name: "Fight Club", year: 1999, director:"Chandan Brown")
-    var movie9 = Movie(name: "Goodfellas", year: 1990, director:"Bob De Kort")
-    var movie10 = Movie(name: "City of God", year: 2002, director:"Mitchell Hudson")
-    var movie11 = Movie(name: "Spirited Away", year: 2001, director:"Jose &Fanisa")
-    
-    
    
-    
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
@@ -47,6 +34,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // to make class its own data source and delegate
         tableView.dataSource = self
         tableView.delegate = self
+        
+        let movie1 = Movie(name: "Elf", year: 2005, director:"Jose Gutierez")
+        let movie2 = Movie(name: "Salt", year: 2010, director: "Fanisa Mlangeni")
+        let movie3 = Movie(name: "Colombiana", year: 2011, director:"David Ciaffoni")
+        let movie4 = Movie(name: "Snowden", year: 2016, director:"Nick Lamela")
+        let movie5 = Movie(name: "Deep Water Horizon", year: 2016, director:"Kadeem Palacios")
+        let movie6 = Movie(name: "Storks", year: 2016, director:"Marq Draggon")
+        let movie7 = Movie(name: "Pulp Fiction", year: 1994, director:"Eric Wong")
+        let movie8 = Movie(name: "Fight Club", year: 1999, director:"Chandan Brown")
+        let movie9 = Movie(name: "Goodfellas", year: 1990, director:"Bob De Kort")
+        let movie10 = Movie(name: "City of God", year: 2002, director:"Mitchell Hudson")
+        let movie11 = Movie(name: "Spirited Away", year: 2001, director:"Jose &Fanisa")
         
         movieList.append(movie1)
         movieList.append(movie2)
